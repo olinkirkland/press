@@ -1,11 +1,25 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <header class="p-3">
+    <img class="logo" src="./assets/images/logo/logo-on-dark.png" />
+  </header>
+
+  <section class="hero">HERO</section>
+
+  <section>FILERED LIST</section>
+
+  <footer>FOOTER</footer>
 </template>
 
-<style scoped></style>
+<style lang="css">
+@import 'tailwindcss';
+</style>
+
+<style lang="scss" scoped>
+img.logo {
+}
+section.hero {
+  background: url('hero-image.png');
+}
+</style>
