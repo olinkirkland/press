@@ -1,13 +1,5 @@
 <template>
-  <button>
-    <slot></slot>
+  <button class="inline-flex items-center justify-center px-2 py-1 font-normal">
+    <slot />
   </button>
 </template>
-
-<style lang="scss" scoped>
-button {
-  border: none;
-  border-radius: 0;
-  // Todo: Background filter blurred
-}
-</style>

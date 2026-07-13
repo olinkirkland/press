@@ -1,0 +1,42 @@
+[
+  {
+    "id": "black-moor-map",
+    "title": "The Black Moor",
+    "author": "O. Kirkland",
+    "description": "A compact horror fantasy scenario for four players, full of swamp secrets, cursed relics, and choices that change every night.",
+    "url": "/downloads/black-moor.pdf",
+    "image": "/images/cover-1.svg"
+  },
+  {
+    "id": "glass-library",
+    "title": "Glass Library",
+    "author": "Maia Vale",
+    "description": "A heist-style urban adventure with hidden archives, rival factions, and a stolen spell that can rewrite memory.",
+    "url": "/downloads/glass-library.pdf",
+    "image": "/images/cover-2.svg"
+  },
+  {
+    "id": "atlas-of-cinders",
+    "title": "Atlas of Cinders",
+    "author": "J. N. Rook",
+    "description": "A short bundle of ruined city encounters, fire-touched beasts, and optional sandbox hooks for street-level exploration.",
+    "url": "/downloads/atlas-of-cinders.pdf",
+    "image": "/images/cover-3.svg"
+  },
+  {
+    "id": "moonlit-market",
+    "title": "Moonlit Market",
+    "author": "E. Sparrow",
+    "description": "A market night scenario built around bargains, strange artifacts, and the cost of making a wish after dark.",
+    "url": "/downloads/moonlit-market.pdf",
+    "image": "/images/cover-4.svg"
+  },
+  {
+    "id": "starbound-brief",
+    "title": "Starbound Brief",
+    "author": "A. Redfern",
+    "description": "A lightweight science-fantasy download with starship salvage, mysterious coordinates, and an urgent call to action.",
+    "url": "/downloads/starbound-brief.pdf",
+    "image": "/images/cover-5.svg"
+  }
+]
