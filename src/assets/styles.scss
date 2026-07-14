@@ -2,5 +2,56 @@
 
 * {
     font-family: 'Source Serif 4';
+    line-height: 1.35;
     // border: 1px solid red;
+}
+
+.max-w-page {
+    width: 100%;
+    max-width: 1200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.15;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+h1 {
+    font-size: 6rem;
+}
+h2 {
+    font-size: 3.7rem;
+}
+h3 {
+    font-size: 2.3rem;
+}
+h4 {
+    font-size: 1.4rem;
+}
+h5 {
+    font-size: 0.9rem;
+}
+h6 {
+    font-size: 0.5rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+*[disabled] {
+    cursor: initial;
+    opacity: 0.5;
 }

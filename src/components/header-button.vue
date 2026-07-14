@@ -1,5 +1,5 @@
 <template>
-    <button class="p-0 cursor-pointer flex items-center">
+    <button class="p-0.5 cursor-pointer flex items-center">
         <slot></slot>
     </button>
 </template>
