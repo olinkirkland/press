@@ -6,10 +6,17 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue(), tailwindcss()],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    plugins: [vue(), tailwindcss()],
+    resolve: {
+        alias: {
+            '@': fileURLToPath(new URL('./src', import.meta.url)),
+        },
     },
-  },
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: `@use "@/assets/variables.scss" as *;`,
+            },
+        },
+    },
 })
