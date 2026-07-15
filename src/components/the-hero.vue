@@ -17,7 +17,7 @@
                         <Button>Download Now</Button>
                     </div>
                     <div>
-                        <div class="flex gap-1">
+                        <!-- <div class="flex gap-1">
                             <button>
                                 <img
                                     disabled
@@ -28,7 +28,7 @@
                             <button>
                                 <img class="w-10" src="../assets/icons/white/arrow-circle.png" />
                             </button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
