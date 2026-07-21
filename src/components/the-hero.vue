@@ -2,7 +2,7 @@
     <div id="hero" ref="heroRef" class="relative w-full h-150">
         <div class="w-full h-full background" :style="backgroundStyle"></div>
         <div id="content" class="absolute w-full h-full top-0">
-            <div class="max-w-page p-3 h-full pt-20 mx-auto">
+            <div class="max-w-page h-full pt-20 mx-auto">
                 <div class="h-full grid grid-cols-2">
                     <div class="h-full flex flex-col justify-center gap-5">
                         <h3>
@@ -16,19 +16,23 @@
                         </p>
                         <Button>Download Now</Button>
                     </div>
-                    <div>
-                        <!-- <div class="flex gap-1">
-                            <button>
+                    <div class="flex flex-col gap-2 h-x my-auto">
+                        <img
+                            :src="`../assets/images/hero/${currentCarouselContent?.image}`"
+                            :alt="`../assets/images/hero/${currentCarouselContent?.image}`"
+                        />
+                        <p>{{ currentCarouselContent?.description }}</p>
+                        <div class="flex gap-1">
+                            <button @click="changeCarouselIndex(1)">
                                 <img
-                                    disabled
                                     class="w-10 rotate-180"
                                     src="../assets/icons/white/arrow-circle.png"
                                 />
                             </button>
-                            <button>
+                            <button @click="changeCarouselIndex(-1)">
                                 <img class="w-10" src="../assets/icons/white/arrow-circle.png" />
                             </button>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -37,9 +41,27 @@
 </template>
 
 <script setup lang="ts">
+import heroContentJSON from '@/assets/hero-content.json';
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
-import Theme from './theme.vue';
 import Button from './button.vue';
+import Theme from './theme.vue';
+
+type HeroContent = {
+    title: string;
+    tags: string[];
+    description: string;
+    image: string;
+};
+
+const heroContent: HeroContent[] = heroContentJSON;
+const carouselIndex = ref(0);
+const currentCarouselContent = computed(() => heroContent[carouselIndex.value]);
+
+function changeCarouselIndex(n: number) {
+    carouselIndex.value += n;
+    if (carouselIndex.value < 0) carouselIndex.value = heroContent.length - 1;
+    if (carouselIndex.value > heroContent.length - 1) carouselIndex.value = 0;
+}
 
 const heroRef = ref<HTMLElement | null>(null);
 
@@ -50,7 +72,6 @@ const targetX = ref(0);
 const targetY = ref(0);
 
 let rafId: number | null = null;
-const isHovered = ref(false);
 
 const lerp = (start: number, end: number, amt: number) => (1 - amt) * start + amt * end;
 

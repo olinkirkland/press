@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Scoundry",
+        "tags": ["software", "blades in the dark"],
+        "description": "Scoundry is a character-creator web-app for Blades in the Dark. Manage your character sheets and track progress. Features offline sharing/saving, and localizations to varying degrees in English, Spanish, German, French, Italian, and Chinese.",
+        "image": "hero-07-21-26/scoundry.png"
+    },
+    {
+        "title": "Grimoire",
+        "tags": ["software", "grimwild"],
+        "description": "Grimoire is a character-creator web-app for Grimwild and features character sheet creation using a dynamic step-by-step form for the twelve core character classes in the game. Additionally, it streamlines your character creation process with built-in name generators and random tables.",
+        "image": "hero-07-21-26/grimoire.png"
+    }
+]

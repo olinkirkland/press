@@ -11,10 +11,17 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corporis sequi
                     tempora voluptatem repellat libero veniam modi obcaecati ad eius.
                 </p>
-                <p>
-                    <a href="">https://www.olinkirk.land</a> |
-                    <a href="mailto:hello@kirkland.press">hello@kirkland.press</a>
-                </p>
+                <div class="flex gap-5">
+                    <a href="">
+                        <img src="../assets/icons/black/link.png" />
+                        www.olinkirk.land
+                    </a>
+                    |
+                    <a href="mailto:hello@kirkland.press">
+                        <img src="../assets/icons/black/mail.png" />
+                        hello@kirkland.press
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
