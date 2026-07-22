@@ -3,10 +3,11 @@
         <div class="w-full h-full background" :style="backgroundStyle"></div>
         <div id="content" class="absolute w-full h-full top-0">
             <div class="max-w-page h-full pt-20 mx-auto">
-                <div class="h-full grid grid-cols-2">
-                    <div class="h-full flex flex-col justify-center gap-5">
+                <div class="h-full grid grid-cols-2 gap-15">
+                    <div class="h-full flex flex-col justify-center gap-7">
                         <h3>
-                            Lorem ipsum dolor, sit amet <theme>consectetur</theme> elit. At, soluta.
+                            Welcome! Here you can find original <theme>scenarios</theme> and
+                            software for tabletop games.
                         </h3>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
@@ -14,26 +15,9 @@
                             Laboriosam nobis saepe et quas asperiores, veniam dolorum neque? Qui
                             soluta tenetur esse.
                         </p>
-                        <Button>Download Now</Button>
+                        <Button>Explore the Collection</Button>
                     </div>
-                    <div class="flex flex-col gap-2 h-x my-auto">
-                        <img
-                            :src="`../assets/images/hero/${currentCarouselContent?.image}`"
-                            :alt="`../assets/images/hero/${currentCarouselContent?.image}`"
-                        />
-                        <p>{{ currentCarouselContent?.description }}</p>
-                        <div class="flex gap-1">
-                            <button @click="changeCarouselIndex(1)">
-                                <img
-                                    class="w-10 rotate-180"
-                                    src="../assets/icons/white/arrow-circle.png"
-                                />
-                            </button>
-                            <button @click="changeCarouselIndex(-1)">
-                                <img class="w-10" src="../assets/icons/white/arrow-circle.png" />
-                            </button>
-                        </div>
-                    </div>
+                    <Carousel :data="heroContentJSON" />
                 </div>
             </div>
         </div>
@@ -44,24 +28,8 @@
 import heroContentJSON from '@/assets/hero-content.json';
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
 import Button from './button.vue';
+import Carousel from './carousel.vue';
 import Theme from './theme.vue';
-
-type HeroContent = {
-    title: string;
-    tags: string[];
-    description: string;
-    image: string;
-};
-
-const heroContent: HeroContent[] = heroContentJSON;
-const carouselIndex = ref(0);
-const currentCarouselContent = computed(() => heroContent[carouselIndex.value]);
-
-function changeCarouselIndex(n: number) {
-    carouselIndex.value += n;
-    if (carouselIndex.value < 0) carouselIndex.value = heroContent.length - 1;
-    if (carouselIndex.value > heroContent.length - 1) carouselIndex.value = 0;
-}
 
 const heroRef = ref<HTMLElement | null>(null);
 
@@ -126,7 +94,7 @@ const backgroundStyle = computed(() => ({
     position: relative;
 
     > .background {
-        background: url('./forest.webp') no-repeat center/cover;
+        background: url('images/forest.webp') no-repeat center/cover;
         filter: blur(5px);
         transition: transform 0.25 ease-out;
         transform: scale(1.25);

@@ -7,7 +7,7 @@
 <style lang="scss" scoped>
 button {
     color: $black;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
     text-transform: uppercase;
     font-size: 0.75rem;
     line-height: 1;
