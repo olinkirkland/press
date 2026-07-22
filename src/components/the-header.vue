@@ -33,6 +33,10 @@ onUnmounted(() => {
                     <img src="../assets/icons/white/link.png" />
                     itch.io
                 </a>
+                <Button size="sm">
+                    <img src="../assets/icons/black/link.png" />
+                    Itch.io
+                </Button>
             </div>
         </header>
     </section>

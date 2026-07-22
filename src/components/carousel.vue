@@ -1,9 +1,12 @@
 <template>
     <div class="carousel flex flex-col gap-2 mb-10">
-        <div class="image-container overflow-hidden relative">
+        <div
+            class="image-container overflow-hidden relative"
+            @click="onClickImage(currentCarouselContent!.link)"
+        >
             <Transition :name="slideDirection" mode="out-in">
                 <img
-                    class="w-full h-full object-cover"
+                    class="w-full h-full object-contain"
                     :key="carouselIndex"
                     :src="`images/hero/${currentCarouselContent?.image}`"
                     :alt="`images/hero/${currentCarouselContent?.image}`"
@@ -55,6 +58,10 @@ const carouselIndex = ref(0);
 const slideDirection = ref('slide-next');
 const currentCarouselContent = computed(() => props.data[carouselIndex.value]);
 
+function onClickImage(url: string) {
+    window.open(url, '_self')?.focus(); // Navigate to url in this tab
+}
+
 function changeCarouselIndex(n: number) {
     // Set transition direction based on forward (1) or backward (-1)
     slideDirection.value = n > 0 ? 'slide-next' : 'slide-prev';
@@ -78,6 +85,12 @@ function setCarouselIndex(n: number) {
     .image-container {
         flex: 1;
         position: relative;
+        transition: scale 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            scale: 1.025;
+        }
     }
 
     .description-text {
