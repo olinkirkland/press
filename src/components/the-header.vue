@@ -29,10 +29,6 @@ onUnmounted(() => {
                 <HeaderButton>Software</HeaderButton>
             </div>
             <div class="flex gap-2 mr-10">
-                <a href="https://itch.io" class="text-white">
-                    <img src="../assets/icons/white/link.png" />
-                    itch.io
-                </a>
                 <Button size="sm">
                     <img src="../assets/icons/black/link.png" />
                     Itch.io

@@ -1,5 +1,12 @@
 <template>
-    <button class="px-5 h-10 cursor-pointer flex gap-1.5 items-center rounded-sm" :class="{}">
+    <button
+        class="cursor-pointer flex gap-1.5 items-center rounded-sm"
+        :class="{
+            'px-1 h-6': props.size === 'sm',
+            'px-3 h-10': props.size === 'md',
+            'px-5 h-15': props.size === 'lg',
+        }"
+    >
         <slot></slot>
     </button>
 </template>
@@ -33,8 +40,12 @@ button {
 </style>
 
 <script lang="ts" setup>
-const props = defineProps<{
-    size: 'sm' | 'md' | 'lg';
-}>();
+const props = withDefaults(
+    defineProps<{
+        size?: 'sm' | 'md' | 'lg';
+    }>(),
+    {
+        size: 'md',
+    },
+);
 </script>
-s

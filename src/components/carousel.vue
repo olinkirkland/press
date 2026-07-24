@@ -6,7 +6,7 @@
         >
             <Transition :name="slideDirection" mode="out-in">
                 <img
-                    class="w-full h-full object-contain"
+                    class="w-full h-full object-contain tilted-image"
                     :key="carouselIndex"
                     :src="`images/hero/${currentCarouselContent?.image}`"
                     :alt="`images/hero/${currentCarouselContent?.image}`"

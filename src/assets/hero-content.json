@@ -19,5 +19,19 @@
         "description": "<strong>Memories of Doskvol</strong> is a supplement to <em>Blades in the Dark</em> containing scenes and world-building questions.",
         "image": "doskvol-memories.png",
         "link": "/collection/blades-in-the-dark/memories-of-doskvol"
+    },
+    {
+        "title": "Tales from the Deathlands",
+        "tags": ["scenarios", "blades in the dark"],
+        "description": "<strong>Tales from the Deathlands</strong> is a collection of <em>Blades in the Dark</em> scores from outside Doskvol's walls.",
+        "image": "deathlands-tales.png",
+        "link": "/collection/blades-in-the-dark/tales-from-the-deathlands"
+    },
+    {
+        "title": "Garden Party",
+        "tags": ["scenarios", "blades in the dark"],
+        "description": "<strong>Garden Party</strong> is a collection of <em>Blades in the Dark</em> scores centered around the upper class and nobility.",
+        "image": "garden-party.png",
+        "link": "/collection/blades-in-the-dark/garden-party"
     }
 ]
