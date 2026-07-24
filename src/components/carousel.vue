@@ -22,7 +22,7 @@
             </ul> -->
         </div>
 
-        <div class="flex justify-between gap-md items-end">
+        <div class="flex justify-between gap-2 items-end">
             <div class="flex flex-shrink-0">
                 <button @click="changeCarouselIndex(1)" class="carousel-button opacity-90">
                     <img class="w-10 rotate-180" src="../assets/icons/white/arrow-circle.png" />

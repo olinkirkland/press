@@ -33,5 +33,12 @@
         "description": "<strong>Garden Party</strong> is a collection of <em>Blades in the Dark</em> scores centered around the upper class and nobility.",
         "image": "garden-party.png",
         "link": "/collection/blades-in-the-dark/garden-party"
+    },
+    {
+        "title": "Sprouts",
+        "tags": ["rpg", "original"],
+        "description": "<strong>Sprouts</strong> is an original tabletop RPG about forest spirits venturing out of their comfort zone to rescue family.",
+        "image": "sprouts.png",
+        "link": "/collection/sprouts/sprouts"
     }
 ]
