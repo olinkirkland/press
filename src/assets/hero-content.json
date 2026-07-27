@@ -28,16 +28,16 @@
         "link": "/collection/blades-in-the-dark/tales-from-the-deathlands"
     },
     {
-        "title": "Garden Party",
+        "title": "The Society Pages",
         "tags": ["scenarios", "blades in the dark"],
-        "description": "<strong>Garden Party</strong> is a collection of <em>Blades in the Dark</em> scores centered around the upper class and nobility.",
-        "image": "garden-party.png",
-        "link": "/collection/blades-in-the-dark/garden-party"
+        "description": "<strong>The Society Pages</strong> is a collection of <em>Blades in the Dark</em> scores centered on intrigue and high society.",
+        "image": "society-pages.png",
+        "link": "/collection/blades-in-the-dark/the-society-pages"
     },
     {
         "title": "Sprouts",
         "tags": ["rpg", "original"],
-        "description": "<strong>Sprouts</strong> is an original tabletop RPG about forest spirits venturing out of their comfort zone to rescue family.",
+        "description": "<strong>Sprouts</strong> is an original tabletop game about forest spirits tending their to the forest and its creatures.",
         "image": "sprouts.png",
         "link": "/collection/sprouts/sprouts"
     }
