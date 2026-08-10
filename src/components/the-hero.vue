@@ -94,7 +94,7 @@ const backgroundStyle = computed(() => ({
     position: relative;
 
     > .background {
-        background: url('./images/forest.webp') no-repeat center/cover;
+        background: url('/images/forest.webp') no-repeat center/cover;
         filter: blur(5px);
         transition: transform 0.25 ease-out;
         transform: scale(1.25);
