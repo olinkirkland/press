@@ -17,9 +17,9 @@
                         www.olinkirk.land
                     </a>
                     |
-                    <a href="mailto:hello@kirkland.press">
+                    <a href="mailto:press@olinkirk.land">
                         <img src="../assets/icons/black/mail.png" />
-                        hello@kirkland.press
+                        press@olinkirk.land
                     </a>
                 </div>
             </div>
