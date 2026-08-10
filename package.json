@@ -5,10 +5,12 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "run-p type-check \"build-only {@}\" --",
-        "generate-covers": "node scripts/generate-covers.mjs"
+        "build": "vue-tsc && vite build",
+        "deploy": "npm run prepare && npm run build && gh-pages -d dist",
+        "prepare": "node scripts/fetch-itch-products.mjs"
     },
     "dependencies": {
+        "gh-pages": "^6.3.0",
         "tailwindcss": "^4.3.2",
         "vue": "^3.5.38",
         "vue-router": "^5.1.0"
